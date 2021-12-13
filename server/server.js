@@ -26,6 +26,8 @@ app.get('/', (req, res) => {
   res.send("Hello World");
 });
 
+app.use(express.static('imgs'))
+
 app.listen(5000, function () {
     console.log(`Listening on port ${ this.address().port }`);
   });

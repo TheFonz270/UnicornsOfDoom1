@@ -11,7 +11,7 @@ db.stories.insertMany([
         pageText:[
             "Not much is known about William Wallace's origins. He was born into a family of lesser nobility around 1270 in Elderslie, Renfrewshire. He has, however, gone on to become a major figure in Scottish history for his part in the First War of Independence. Here, you will learn about his life and the actions that have led to him having such a status.",
         ],
-        pageImageUrl:"",
+        pageImageUrl:"./imgs/Wallace_Monument_20080505_Stained_glass_William_Wallace.jpg",
         pageImageAlt: "Stain glass of William Wallace at the Wallace Monument. By Otter - Own work, CC BY-SA 3.0"
     },  {
         pageHeading: "Political Crises in Scotland",
@@ -22,7 +22,7 @@ db.stories.insertMany([
                 "William was one of a number of rebels who chose to uprise against Edward's rule. They began to defy their overlords with several rebellions taking place across Scotland.",
                 "That led to the beginning of the war, and the battle of Stirling Bridge."
             ], 
-        pageImageUrl:"",
+        pageImageUrl:"./imgs/Braveheart_edinburghcastle.jpg",
         pageImageAlt: "Statue of Wallace at Edinburgh Castle, By Kjetil Bjørnsrud - Own work, CC BY 2.5."
     },  {
         pageHeading: "Battle of Stirling Bridge",
@@ -32,7 +32,7 @@ db.stories.insertMany([
             "During a major charge by the Scottish, some of the English soldiers retreated as others pushed forward, and under the overwhelming weight, the bridge collapsed and many English soldiers drowned.",
             "After the battle, Moray and Wallace assumed the title of Guardians of the Kingdom of Scotland. In a ceremony, at the 'Kirk o' the Forest' (Selkirk), towards the end of the year, Wallace was knighted."
         ],
-        pageImageUrl:"",
+        pageImageUrl:"./imgs/The_Battle_of_Stirling_Bridge.jpg",
         pageImageAlt:"A Victorian depiction of the battle. By Unknown author - C Hanley, History Of Scotland, Public Domain",
     },  {
         pageHeading: "William's Downfall",
@@ -42,7 +42,7 @@ db.stories.insertMany([
             "Wallace was transported to London, and taken to Westminster Hall, where he was tried for treason and for atrocities against civilians in war. He responded to the treason charge, 'I could not be a traitor to Edward, for I was never his subject.'",
             "He was found guilty and, following the trial, Wallace was taken to the Tower of London where he was gruesomely tortured, and executed."
             ],
-        pageImageUrl:"",
+        pageImageUrl:"./imgs/The_Trial_of_William_Wallace_at_Westminster.jpg",
         pageImageAlt:"Wallace's trial in Westminster Hall. Painted by Daniel Maclise, By Daniel Maclise - Kunst für Alle, Public Domain"
     },  {
         pageHeading: "William's Legacy",
@@ -51,7 +51,7 @@ db.stories.insertMany([
             "Wallace is still remembered to this day for standing up for what he believed in. Many monuments, plaques, movies and books have been made to keep the memory of Wallace and his actions alive.", 
             "The Wallace Sword, which supposedly belonged to Wallace, was held for many years in Dumbarton Castle and is now in the Wallace Monument."
         ],
-        pageImageUrl:"",
+        pageImageUrl:"./imgs/Wfm_wallace_monument.jpg",
         pageImageAlt:"The National Wallace Monument near Stirling. By Finlay McWalter - Own work, CC BY-SA 3.0"
     }
 ]}]);
