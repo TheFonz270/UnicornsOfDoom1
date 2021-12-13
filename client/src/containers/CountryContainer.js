@@ -5,30 +5,30 @@ import { getStories, getStory } from '../services/storyService';
 
 const CountryContainer = () => {
     const country = "Scotland"
-    const [Story, setStory] = useState({});
+    const [StoryState, setStoryState] = useState({});
     const [Stories, setStories] = useState([[]]);
+    // setStoryState({});
 
     useEffect(()=>{
     getStories().then((allStories)=>{
       setStories(allStories);
-    })
+    })}, [])
 
-    const selectPlayer = ((id) => {
-        const selectedStory = getStory(id)
-        setStory(selectedStory)
-        console.log(Story)
-});
-    
+    const selectPlayer = id => {
+        console.log("select player id value: ", id)
+        getStory(id).then((selectedStory) => {
+            setStoryState(selectedStory)
+        })
+    };
 
-  }, []);
-
+    // console.log("In country container:", StoryState)
 
     return (
     <>
     <h1>Country Container</h1>
     {/* MAP */}
     <KeyPlayers Stories={Stories} selectPlayer={selectPlayer}/>
-    <CharacterContainer />
+    <CharacterContainer StoryState={StoryState}/>
     </>
     )
 };

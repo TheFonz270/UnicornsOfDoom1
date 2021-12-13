@@ -1,12 +1,20 @@
-import React from 'react';
+import {useEffect, useState} from 'react';
 
 const PlayerCard = ({story, selectPlayer}) => {
 
+    const [selection, setSelection] = useState("");
+    console.log("selection: ", selection)
+
     const handleClick = (e) => {
-        const player = story._id
-        selectPlayer(player)
+        // setSelection(story._id);
+        selectPlayer(story._id)
         // console.log(player)
     }
+    
+    // useEffect(() => {
+    //     // selectPlayer(selection)
+    //     console.log("use effect called")
+    // }, [selection])
 
     return (
         <>
