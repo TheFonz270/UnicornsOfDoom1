@@ -3,18 +3,22 @@ import  quizService  from '../services/quizService.js';
 
 const Quiz = () => {
         
-    const [questions, setQuestions] = useState([])
-    
+	const [questions, setQuestions] = useState([])
+
+	
     useEffect(() => {
+		console.log('text')
         quizService.getQuestions()
-        .then (questions => setQuestions(questions))
+        .then (questions => {setQuestions(questions)
+        })
     }, [])
 
-    console.log(questions)
-
-    const [currentQuestion, setCurrentQuestion] = useState(0);
+	console.log(questions)
+	
+	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
+
 
 	const handleAnswerOptionClick = (isCorrect) => {
 		if (isCorrect) {
@@ -30,14 +34,20 @@ const Quiz = () => {
 	};
 
 	
+	if( !questions.length ) {
+		return "Loading ...."
+	}
+
+
 
 	return (
+		
 		<div className='app'>
 			{showScore ? (
 				<div className='score-section'>
 					
 					You scored {score} out of {questions.length}
-					<DoughnutChart score={score} />
+					{/* <DoughnutChart score={score} /> */}
 				</div>
 			) : (
 				<>
@@ -60,35 +70,4 @@ const Quiz = () => {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//     return (
-//     <>
-//         <h3>{questions}</h3>
-//     </>
-//     )
-// };
-
-// export default Quiz;
+export default Quiz;
