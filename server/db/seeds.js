@@ -58,38 +58,43 @@ db.stories.insertMany([
 
 db.questions.insertMany([
     {   category: "william_wallace",
-        question: "When was William Wallace born?",
-        correct_answer: "around 1270",
-        incorrect_answers: [
-            "after 1984",
-            "before 1000"]
+        questionText: "When was William Wallace born?",
+        answerOptions: [
+            { answerText: 'around 1270', isCorrect: true },
+            { answerText: 'after 1984', isCorrect: false },
+            { answerText: 'before 1000', isCorrect: false },
+        ]
     },
     {   category: "william_wallace",
-        question: "Which English monarch tried to take power in Scotland after King Alexander III died??",
-        correct_answer: "King Edward I",
-        incorrect_answers: [
-            "Queen Elizabeth II",
-            "King Henry VIII"]
+        questionText: "Which English monarch tried to take power in Scotland after King Alexander III died??",
+        answerOptions: [
+            { answerText: 'Queen Elizabeth II', isCorrect: false },
+            { answerText: 'King Edward I', isCorrect: true },
+            { answerText: 'King Henry VIII', isCorrect: false },
+        ]
     },
     {   category: "william_wallace",
-        question: "What was the first major successful battle led by Wallace?",
-        correct_answer: "Battle of Stirling Bridge",
-        incorrect_answers: [
-            "Battle of Bannockburn",
-            "Battle of Meadowbank House"]
+        questionText: "What was the first major successful battle led by Wallace?",
+        answerOptions: [
+            { answerText: 'Battle of Stirling Bridge', isCorrect: true },
+            { answerText: 'Battle of Bannockburn', isCorrect: false },
+            { answerText: 'Battle of Meadowbank House', isCorrect: false },
+        ]
     },
     {   category: "william_wallace",
-        question: "Where was William Wallace captured?",
-        correct_answer: "near Glasgow",
-        incorrect_answers: [
-            "In York",
-            "In Paris"]
+        questionText: "Where was William Wallace captured?",
+        answerOptions: [
+            { answerText: 'in York', isCorrect: false },
+            { answerText: 'in Paris', isCorrect: false },
+            { answerText: 'near Glasgow', isCorrect: true },
+        ]
     },
     {   category: "william_wallace",
-        question: "Where is Wallace's sword currently held?",
-        correct_answer: "The Wallace Monument",
-        incorrect_answers: [
-            "The Tower of London",
-            "Disneyland"]
+        questionText: "Where is Wallace's sword currently held?",
+        answerOptions: [
+            {answerText: "The Tower of London", isCorrect: false },
+            {answerText: "The Wallace Monument", isCorrect: true },
+            {answerText: "Disneyland",  isCorrect: false },
+        ]
     },
 ]);
