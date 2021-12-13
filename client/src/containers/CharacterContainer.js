@@ -2,13 +2,14 @@ import { useState } from 'react';
 import Quiz from '../components/Quiz'
 import Story from '../components/Story'
 
-const CharacterContainer = () => {
+const CharacterContainer = ({StoryState}) => {
 
+    console.log("in char cont: ", StoryState)
 
     return (
     <>
         <h1>Character Container</h1>
-        <Story />
+        <Story StoryState={StoryState}/>
         <Quiz />
     </>
     )
