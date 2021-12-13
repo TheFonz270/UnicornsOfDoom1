@@ -15,7 +15,6 @@ const CountryContainer = () => {
     })}, [])
 
     const selectPlayer = id => {
-        console.log("select player id value: ", id)
         getStory(id).then((selectedStory) => {
             setStoryState(selectedStory)
         })
