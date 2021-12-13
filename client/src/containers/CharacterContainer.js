@@ -12,7 +12,7 @@ const CharacterContainer = ({StoryState}) => {
     <>
         <h1>Character Container</h1>
         <Story StoryState={StoryState}/>
-        <Quiz />
+        <Quiz character={StoryState.character}/>
     </>
     )
 };

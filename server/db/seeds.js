@@ -4,14 +4,15 @@ db.dropDatabase();
 db.stories.insertMany([
   {
     region: "scotland",
-    character: "william_wallace",
+    character: "William Wallace",
+    charImg: "./imgs/image.png"
     pages: [
        {
         pageHeading: "Who Was William Wallace?",
         pageText:[
             "Not much is known about William Wallace's origins. He was born into a family of lesser nobility around 1270 in Elderslie, Renfrewshire. He has, however, gone on to become a major figure in Scottish history for his part in the First War of Independence. Here, you will learn about his life and the actions that have led to him having such a status.",
         ],
-        pageImageUrl:"./imgs/Wallace_Monument_20080505_Stained_glass_William_Wallace.jpg",
+        pageImageUrl:"./imgs/Wallace_Monument_20080505_Stained_glas W.jpg",
         pageImageAlt: "Stain glass of William Wallace at the Wallace Monument. By Otter - Own work, CC BY-SA 3.0"
     },  {
         pageHeading: "Political Crises in Scotland",
@@ -57,7 +58,7 @@ db.stories.insertMany([
 ]}]);
 
 db.questions.insertMany([
-    {   category: "william_wallace",
+    {   category: "William Wallace",
         questionText: "When was William Wallace born?",
         answerOptions: [
             { answerText: 'around 1270', isCorrect: true },
@@ -65,7 +66,7 @@ db.questions.insertMany([
             { answerText: 'before 1000', isCorrect: false },
         ]
     },
-    {   category: "william_wallace",
+    {   category: "William Wallace",
         questionText: "Which English monarch tried to take power in Scotland after King Alexander III died??",
         answerOptions: [
             { answerText: 'Queen Elizabeth II', isCorrect: false },
@@ -73,7 +74,7 @@ db.questions.insertMany([
             { answerText: 'King Henry VIII', isCorrect: false },
         ]
     },
-    {   category: "william_wallace",
+    {   category: "William Wallace",
         questionText: "What was the first major successful battle led by Wallace?",
         answerOptions: [
             { answerText: 'Battle of Stirling Bridge', isCorrect: true },
@@ -81,7 +82,7 @@ db.questions.insertMany([
             { answerText: 'Battle of Meadowbank House', isCorrect: false },
         ]
     },
-    {   category: "william_wallace",
+    {   category: "William Wallace",
         questionText: "Where was William Wallace captured?",
         answerOptions: [
             { answerText: 'in York', isCorrect: false },
@@ -89,7 +90,7 @@ db.questions.insertMany([
             { answerText: 'near Glasgow', isCorrect: true },
         ]
     },
-    {   category: "william_wallace",
+    {   category: "William Wallace",
         questionText: "Where is Wallace's sword currently held?",
         answerOptions: [
             {answerText: "The Tower of London", isCorrect: false },
