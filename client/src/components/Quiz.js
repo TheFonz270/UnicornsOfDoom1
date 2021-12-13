@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
-import  quizService  from '../services/quizService.js';
+import quizService from '../services/quizService.js';
+import DoughnutChart from './DoughnutChart.js';
 
 const Quiz = () => {
         
@@ -35,7 +36,7 @@ const Quiz = () => {
 
 	
 	if( !questions.length ) {
-		return "Loading ...."
+		return "Loading ..."
 	}
 
 
@@ -47,7 +48,7 @@ const Quiz = () => {
 				<div className='score-section'>
 					
 					You scored {score} out of {questions.length}
-					{/* <DoughnutChart score={score} /> */}
+					<DoughnutChart score={score} questions={questions} />
 				</div>
 			) : (
 				<>

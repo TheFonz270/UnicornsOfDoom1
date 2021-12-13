@@ -1,6 +1,8 @@
 import { useState } from 'react';
-import Quiz from '../components/Quiz'
-import Story from '../components/Story'
+import { Chart, ArcElement } from 'chart.js';
+import Quiz from '../components/Quiz';
+import Story from '../components/Story';
+Chart.register(ArcElement);
 
 const CharacterContainer = () => {
 
