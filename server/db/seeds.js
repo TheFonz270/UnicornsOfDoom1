@@ -5,14 +5,14 @@ db.stories.insertMany([
   {
     region: "scotland",
     character: "William Wallace",
-    charImg: "./imgs/image.png",
+    charImg: "./imgs/wallace.png",
     pages: [
        {
         pageHeading: "Who Was William Wallace?",
         pageText:[
             "Not much is known about William Wallace's origins. He was born into a family of lesser nobility around 1270 in Elderslie, Renfrewshire. He has, however, gone on to become a major figure in Scottish history for his part in the First War of Independence. Here, you will learn about his life and the actions that have led to him having such a status.",
         ],
-        pageImageUrl:"./imgs/Wallace_Monument_20080505_Stained_glas W.jpg",
+        pageImageUrl:"./imgs/Wallace_Monument_20080505_Stained_glass_William_Wallace.jpg",
         pageImageAlt: "Stain glass of William Wallace at the Wallace Monument. By Otter - Own work, CC BY-SA 3.0"
     },  {
         pageHeading: "Political Crises in Scotland",

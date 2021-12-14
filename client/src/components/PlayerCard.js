@@ -12,7 +12,7 @@ const PlayerCard = ({story, selectPlayer}) => {
         <>
             <div onClick={handleClick}>
                 <p>{story.character}</p>
-                <img src='./imgs/image.png' alt={story.character} width="150px"/>
+                <img src={story.charImg} alt={story.character}/>
             </div>
         </>
     )

@@ -12,16 +12,16 @@ console.log("page content, pages array: ", pageContent)
     
 
     return (
-        <>
+        <div class="storyPage">
         
-        <div class="storyLeft">
-            <h3>{pageContent.pageHeading}</h3>
-            {paragraphs}
+            <div class="storyLeft">
+                <h3>{pageContent.pageHeading}</h3>
+                {paragraphs}
+            </div>
+            <div class="storyRight">
+                <img src={pageContent.pageImageUrl} alt={pageContent.pageImageAlt} />
+            </div>
         </div>
-        <div class="storyRight">
-            <img src={pageContent.pageImageUrl} alt={pageContent.pageImageAlt} />
-        </div>
-        </>
 
     )
 
