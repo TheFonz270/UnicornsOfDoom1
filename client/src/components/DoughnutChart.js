@@ -26,7 +26,11 @@ function DoughnutChart({ score, questions }) {
     }
   }
 
-  return <Doughnut data={data} options={options} />
-}
+  return (
+  <div className="chart">
+    <Doughnut data={data} options={options} />
+  </div>
+  
+  )}
 
 export default DoughnutChart

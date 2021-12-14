@@ -49,12 +49,14 @@ const Quiz = ({character, handleHome, handleStory, handleQuiz, score, showScore,
 
 	return (
 		
-		<div className='app'>
+		<div className='quiz-container'>
 			{showScore ? (
 				<div className='score-section'>
 					
 					You scored {score} out of {questions.length}
+					<div className='chart-section'>
 					<DoughnutChart score={score} questions={questions} />
+					</div>
                     <button onClick={handleHome} >Return to Gallery</button><button onClick={handleStory} >Return to Story</button>
 				</div>
 			) : (
