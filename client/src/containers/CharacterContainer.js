@@ -8,11 +8,18 @@ const CharacterContainer = ({StoryState}) => {
 
     console.log("in char cont: ", StoryState)
 
+    const [show,setShow]=useState(false)
+
     return (
     <>
         <h1>Character Container</h1>
-        <Story StoryState={StoryState}/>
-        <Quiz character={StoryState.character}/>
+        <Story StoryState={StoryState} />
+        {<button onClick={()=>setShow(!show)} >Quiz</button> }
+        { 
+            show?<Quiz character={StoryState.character}/>:null
+            
+        }
+        
     </>
     )
 };

@@ -18,6 +18,8 @@ function DoughnutChart({ score, questions }) {
   }
 
   const options = {
+        circumference: 60 * Math.PI,
+        rotation: 85 * Math.PI,
     title: {
       display: true,
       text: 'Doughnut Chart'
