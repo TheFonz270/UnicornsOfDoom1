@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import quizService from '../services/quizService.js';
 import DoughnutChart from './DoughnutChart.js';
 
-const Quiz = ({character, handleHome, handleStory, handleQuiz}) => {
+const Quiz = ({character, handleHome, handleStory, handleQuiz, score, showScore, setScore, setShowScore, handleTimmysBubble}) => {
         
 	const [questions, setQuestions] = useState([])
 
@@ -15,11 +15,15 @@ const Quiz = ({character, handleHome, handleStory, handleQuiz}) => {
         })
     }, [])
 
+	useEffect(() =>{
+		// console.log("showScore: ",showScore)
+		// console.log("score: ",score)
+		if (showScore) {handleTimmysBubble(score)};
+	}, [showScore])
+
 	console.log(questions)
 	
 	const [currentQuestion, setCurrentQuestion] = useState(0);
-	const [showScore, setShowScore] = useState(false);
-	const [score, setScore] = useState(0);
 
 
 	const handleAnswerOptionClick = (isCorrect) => {

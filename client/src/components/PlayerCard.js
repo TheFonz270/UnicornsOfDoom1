@@ -10,12 +10,10 @@ const PlayerCard = ({story, selectPlayer}) => {
     }
 
     return (
-        <>
-            <div onClick={handleClick}>
-                <p>{story.character}</p>
+            <div class="playerCard" onClick={handleClick}>
                 <img src={story.charImg} alt={story.character}/>
+                <h3>{story.character}</h3>
             </div>
-        </>
     )
 }
 
