@@ -13,15 +13,15 @@ const KeyPlayers = ({Stories, selectPlayer}) => {
         {PlayerList}
             <div class='dummyPlayer'>
                     <p>Coming Soon</p>
-                    <img src='./imgs/image.png' alt="Placeholder image" />
+                    <img src='./imgs/coming_soon.png' alt="Placeholder image" />
             </div>
             <div class='dummyPlayer'>
                     <p>Coming Soon</p>
-                    <img src='./imgs/image.png' alt="Placeholder image" />
+                    <img src='./imgs/coming_soon.png' alt="Placeholder image" />
             </div>
             <div class='dummyPlayer'>
                     <p>Coming Soon</p>
-                    <img src='./imgs/image.png' alt="Placeholder image" />
+                    <img src='./imgs/coming_soon.png' alt="Placeholder image" />
             </div>
        </div>
     )

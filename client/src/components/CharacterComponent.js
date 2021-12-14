@@ -4,19 +4,26 @@ import Quiz from './Quiz';
 import Story from './Story';
 Chart.register(ArcElement);
 
-const CharacterComponent = ({StoryState}) => {
+const CharacterComponent = ({StoryState, handleHome, handleQuizClick, handleStory, showStory, showQuiz, currentPage, handleNextPage, handlePrevPage}) => {
 
     console.log("in char cont: ", StoryState)
 
-    const [show,setShow]=useState(false)
+
+
+    
+
+    if (!StoryState.character) {
+        return (
+            <>
+            </>
+        )
+        } 
 
     return (
     <>
-        <h1>Character Container</h1>
-        <Story StoryState={StoryState} />
-        {<button onClick={()=>setShow(!show)} >Quiz</button> }
+        {showStory?<Story StoryState={StoryState} handleHome={handleHome} currentPage={currentPage} handleNextPage={handleNextPage} handlePrevPage={handlePrevPage} handleQuizClick = {handleQuizClick} showQuiz={showQuiz}/>:null}
         { 
-            show?<Quiz character={StoryState.character}/>:null
+            showQuiz?<Quiz character={StoryState.character} handleHome={handleHome} handleStory={handleStory}/>:null
             
         }
         

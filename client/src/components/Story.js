@@ -1,30 +1,29 @@
 import { useState } from 'react'
 import Page from './Page.js';
 
-const Story = ({StoryState}) => {
+const Story = ({StoryState, handleHome, currentPage, handleNextPage, handlePrevPage, handleQuizClick, showQuiz}) => {
 
-    console.log("story within story: ", StoryState)
-
-    if (!StoryState.character) {
-        return (
-            <p>loading</p>
-        )
-        } 
+    // console.log("story within story: ", StoryState)
     
-    console.log("StoryState.pages: ", StoryState.pages)
+    // console.log("StoryState.pages: ", StoryState.pages)
 
-    const pages = StoryState.pages.map((page) => {
-        console.log("Page: ", page)
-        return <Page pageContent={page}/>
-    })
 
-    console.log("pages: ", pages)
+
+
+    // const pages = StoryState.pages.filter((page) => { pages(currentPage)
+    //     console.log("Page: ", page)
+    //     return <Page pageContent={page}/>
+    // })
+
+    console.log("Storystate: ", StoryState)
 
     return (
     <>
-        <h3>Story</h3>
-        <h3>{StoryState.character}</h3>
-        {pages}
+        <h3>The Story of {StoryState.character}</h3>
+        <Page pageContent={StoryState.pages[currentPage]} />
+        {currentPage!==(0)?<button onClick={handlePrevPage} >Prev Page</button>:null}
+        {currentPage!==(StoryState.pages.length-1)?<button onClick={handleNextPage} >Next Page</button>:null}
+        {showQuiz===false?<button onClick={handleQuizClick} handleHome={handleHome}>Quiz</button>:null }
     </>
     )
 };

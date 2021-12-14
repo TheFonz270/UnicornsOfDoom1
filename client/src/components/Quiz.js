@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import quizService from '../services/quizService.js';
 import DoughnutChart from './DoughnutChart.js';
 
-const Quiz = ({character}) => {
+const Quiz = ({character, handleHome, handleStory, handleQuiz}) => {
         
 	const [questions, setQuestions] = useState([])
 
@@ -51,6 +51,7 @@ const Quiz = ({character}) => {
 					
 					You scored {score} out of {questions.length}
 					<DoughnutChart score={score} questions={questions} />
+                    <button onClick={handleHome} >Return to Gallery</button><button onClick={handleStory} >Return to Story</button>
 				</div>
 			) : (
 				<>

@@ -23,6 +23,7 @@ body {
 
 #keyPlayers img {
   max-width:200px;
+  margin:0 10px;
 }
 
 #keyPlayers {
