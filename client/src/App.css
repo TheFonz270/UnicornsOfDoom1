@@ -8,17 +8,33 @@ body {
   margin:15px auto;
 }
 
+
 .storyPage {
   display:flex;
-  justify-content: space-around;
+  border-style:solid;
+  background-image: url(https://wallpaperaccess.com/full/3872532.jpg);
+  background-size: cover;
+  border-style: double;
+  font-family: 'Charmonman', cursive;
+  font-size: 15px;
+  height: 560px;
+  padding: 20px;
 }
 
-.storyLeft, .storyRight {
-  width:50%;
+.storyLeft {
+  width: 50%;
+  margin: 5px;
 }
 
-.storyRight img{
-  float: right;
+.storyRight img {
+  border: solid 2px
+}
+
+.storyRight {
+  width: 50%;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
 }
 
 .storyPage h3 {
@@ -59,6 +75,5 @@ button:hover {
 
 #buttonBar {
   display:flex;
-  justify-content: center;
   width:100%;
 }
