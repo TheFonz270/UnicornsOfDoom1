@@ -1,5 +1,6 @@
 img {
-  max-width:300px;
+  max-width:400px;
+  max-height:400px
 }
 
 body {
@@ -9,7 +10,15 @@ body {
 
 .storyPage {
   display:flex;
+  justify-content: space-around;
+}
 
+.storyLeft, .storyRight {
+  width:50%;
+}
+
+.storyRight img{
+  float: right;
 }
 
 .storyPage h3 {
@@ -28,5 +37,28 @@ body {
 
 #keyPlayers {
   display: flex;
-  
+}
+
+.score-section {
+  max-width:420px;
+}
+
+button {
+  background-color: #0065BF;
+  padding:4px;
+  border: none;
+  font-size:16px;
+  color:#ffffff;
+  margin:25px;
+  width: 140px;
+}
+
+button:hover {
+  background-color: #2b76b8;
+}
+
+#buttonBar {
+  display:flex;
+  justify-content: center;
+  width:100%;
 }

@@ -6,6 +6,7 @@ const PlayerCard = ({story, selectPlayer}) => {
 
     const handleClick = (e) => {
         selectPlayer(story._id)
+        
     }
 
     return (

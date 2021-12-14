@@ -21,9 +21,12 @@ const Story = ({StoryState, handleHome, currentPage, handleNextPage, handlePrevP
     <>
         <h3>The Story of {StoryState.character}</h3>
         <Page pageContent={StoryState.pages[currentPage]} />
-        {currentPage!==(0)?<button onClick={handlePrevPage} >Prev Page</button>:null}
-        {currentPage!==(StoryState.pages.length-1)?<button onClick={handleNextPage} >Next Page</button>:null}
-        {showQuiz===false?<button onClick={handleQuizClick} handleHome={handleHome}>Quiz</button>:null }
+        <div id="buttonBar">
+            {currentPage!==(0)?<button onClick={handlePrevPage} >←</button>:null}
+            {currentPage!==(StoryState.pages.length-1)?<button onClick={handleNextPage} >→</button>:null}
+            {currentPage===(StoryState.pages.length-1)?<button onClick={handleQuizClick} handleHome={handleHome}>Quiz</button>:null }
+            <button onClick={handleHome} >Return to Gallery</button>
+        </div>
     </>
     )
 };
