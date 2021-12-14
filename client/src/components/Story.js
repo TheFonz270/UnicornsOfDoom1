@@ -4,11 +4,11 @@ const Story = ({StoryState}) => {
 
     console.log("story within story: ", StoryState)
 
-    if (!StoryState.character) {
-        return (
-            <p>loading</p>
-        )
-        }
+    // if (!StoryState.character) {
+    //     return (
+    //         <p>loading</p>
+    //     )
+    //     }
 
     // const pages = StoryState.pages.map((page) => {
 

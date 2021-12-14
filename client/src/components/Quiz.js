@@ -2,15 +2,16 @@ import { useState, useEffect } from 'react'
 import quizService from '../services/quizService.js';
 import DoughnutChart from './DoughnutChart.js';
 
-const Quiz = () => {
+const Quiz = ({character}) => {
         
 	const [questions, setQuestions] = useState([])
 
 	
     useEffect(() => {
 		console.log('text')
-        quizService.getQuestions()
-        .then (questions => {setQuestions(questions)
+		quizService.getQuestions()
+		.then(questions => {setQuestions(questions)
+			
         })
     }, [])
 
@@ -35,9 +36,10 @@ const Quiz = () => {
 	};
 
 	
-	if( !questions.length ) {
+	if ((!questions.length) && (questions.character !== { character })) {
 		return "Loading ..."
 	}
+	
 
 
 

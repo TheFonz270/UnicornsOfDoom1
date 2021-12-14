@@ -5,7 +5,7 @@ db.stories.insertMany([
   {
     region: "scotland",
     character: "William Wallace",
-    charImg: "./imgs/image.png"
+    charImg: "./imgs/image.png",
     pages: [
        {
         pageHeading: "Who Was William Wallace?",
