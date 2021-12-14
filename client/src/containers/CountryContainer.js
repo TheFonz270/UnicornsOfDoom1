@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import CharacterContainer from './CharacterContainer';
+import CharacterComponent from '../components/CharacterComponent';
 import KeyPlayers from '../components/KeyPlayers';
 import { getStories, getStory } from '../services/storyService';
 
@@ -27,7 +27,7 @@ const CountryContainer = () => {
     <h1>Country Container</h1>
     {/* MAP */}
     <KeyPlayers Stories={Stories} selectPlayer={selectPlayer}/>
-    <CharacterContainer StoryState={StoryState}/>
+    <CharacterComponent StoryState={StoryState}/>
     </>
     )
 };
