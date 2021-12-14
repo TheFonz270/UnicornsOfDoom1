@@ -7,8 +7,12 @@ img {
   max-height:400px
 }
 
+p {
+  margin-top:0px;
+}
+
 .kid {
-  text-align: center;
+  text-align: right;
 }
 
 .kid img {
@@ -39,7 +43,8 @@ img {
 
 
 #countryContainer .main {
-  width:70%;
+  width:75%;
+  padding-top:15px;
 }
 
 .Gallery {
@@ -47,7 +52,7 @@ img {
 }
 
 #countryContainer .kid {
-  width:30%;
+  width:25%;
 }
 #countryContainer .kid img {
   max-width:100%;
@@ -60,6 +65,7 @@ img {
 #keyPlayers {
   display: flex;
   flex-wrap: wrap;
+  margin:0 15px;
 }
 
 .playerCard {
@@ -80,30 +86,23 @@ img {
   background-image: url(https://wallpaperaccess.com/full/3872532.jpg);
   background-size: cover;
   border-style: double;
-  font-family: 'Charmonman', cursive;
   font-size: 15px;
-  height: 560px;
+  height: 520px;
   padding: 20px;
 }
 
-.storyLeft {
-  width: 50%;
-  margin: 5px;
+
+
+.story1 h3 {
+  font-family: 'Charmonman';
+  font-size:26px;
+  margin: 5px 0 0;
 }
 
-.storyRight img {
-  border: solid 2px
-}
-
-.storyRight {
-  width: 50%;
-  margin: 5px;
-  display: flex;
-  justify-content: center;
-}
-
-.storyPage h3 {
-  margin-top:0px;
+.story1 img {
+  float:right;
+  margin:0 0 10px 10px;
+  max-width:350px;
 }
 
 #characterComponent {
@@ -139,7 +138,7 @@ button:hover {
 
 .quiz-container {
   position: relative;
-  width: 640px;
+  width: 550px;
   margin: 7% auto;
   border: tan solid 12px;
   border-top: #bda27e solid 12px;
@@ -148,11 +147,12 @@ button:hover {
   box-shadow: 0px 0px 6px 5px rgba(58, 18, 13, 0), 0px 0px 0px 2px #c2a782, 0px 0px 0px 4px #a58e6f, 3px 4px 8px 5px rgba(0, 0, 0, 0.5);
   background-image: url(https://image.freepik.com/free-photo/empty-blackboard_53876-30426.jpg);
   background-size: cover;
+  padding:15px;
 }
 
 .score-section {
   max-width: 100%;
-  padding: 80px;
+  padding: 0 80px;
   vertical-align: middle;
   text-align: center;
   font-family: Rock Salt;
@@ -166,21 +166,19 @@ button:hover {
 .question-section {
   vertical-align: middle;
   font-family: Rock Salt;
-  font-size: 1.6em;
   color: rgba(238, 238, 238, 0.7);
 }
 
 .question-text {
   vertical-align: middle;
   font-family: Rock Salt;
-  font-size: 1.6em;
+  font-size: 24px;
   color: rgba(238, 238, 238, 0.7);
 }
 
 .answer-section {
   vertical-align: middle;
   font-family: Rock Salt;
-  font-size: 1.6em;
   color: rgba(238, 238, 238, 0.7);
   display: flex;
   flex-direction: column;
@@ -189,7 +187,7 @@ button:hover {
 .answer-section > button {
   vertical-align: middle;
 		font-family: Rock Salt;
-		font-size: 1.6em;
+		font-size: 22px;
 		color: rgba(238, 238, 238, 0.7);
     background-color: transparent;
     width: auto;
@@ -205,6 +203,6 @@ button:hover {
 }
 
 
-/* .answer-section > button:hover {
-  background-color: 
-} */
+.answer-section > button:hover {
+  text-decoration:none;
+}

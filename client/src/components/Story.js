@@ -19,7 +19,6 @@ const Story = ({StoryState, handleHome, currentPage, handleNextPage, handlePrevP
 
     return (
     <>
-        <h3>The Story of {StoryState.character}</h3>
         <Page pageContent={StoryState.pages[currentPage]} />
         <div id="buttonBar">
             {currentPage!==(0)?<button onClick={handlePrevPage} >←</button>:null}
