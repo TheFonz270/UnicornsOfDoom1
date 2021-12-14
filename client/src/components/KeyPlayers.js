@@ -11,17 +11,17 @@ const KeyPlayers = ({Stories, selectPlayer}) => {
     return (
         <div id="keyPlayers">
         {PlayerList}
-            <div class='dummyPlayer'>
-                    <p>Coming Soon</p>
+            <div class='playerCard'>
                     <img src='./imgs/coming_soon.png' alt="Placeholder image" />
+                    <h3>Coming Soon</h3>
             </div>
-            <div class='dummyPlayer'>
-                    <p>Coming Soon</p>
+            <div class='playerCard'>
                     <img src='./imgs/coming_soon.png' alt="Placeholder image" />
+                    <h3>Coming Soon</h3>
             </div>
-            <div class='dummyPlayer'>
-                    <p>Coming Soon</p>
+            <div class='playerCard'>
                     <img src='./imgs/coming_soon.png' alt="Placeholder image" />
+                    <h3>Coming Soon</h3>
             </div>
        </div>
     )
