@@ -21,7 +21,7 @@ console.log("page content, pages array: ", pageContent)
             <div class="storyRight">
                 <img src={pageContent.pageImageUrl} alt={pageContent.pageImageAlt} />
             </div>
-        </div>
+            </div>
 
     )
 
