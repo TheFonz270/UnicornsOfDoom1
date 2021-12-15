@@ -23,7 +23,7 @@ const Story = ({StoryState, handleHome, currentPage, handleNextPage, handlePrevP
         <div id="buttonBar">
             {currentPage!==(0)?<button onClick={handlePrevPage} >←</button>:null}
             {currentPage!==(StoryState.pages.length-1)?<button onClick={handleNextPage} >→</button>:null}
-            {currentPage===(StoryState.pages.length-1)?<button onClick={handleQuizClick} handleHome={handleHome}>Quiz</button>:null }
+            {currentPage===(StoryState.pages.length-1)?<button onClick={handleQuizClick} handleHome={handleHome} id="quizButton">Take the Quiz</button>:null }
             <button onClick={handleHome} >Return to Gallery</button>
         </div>
     </>
