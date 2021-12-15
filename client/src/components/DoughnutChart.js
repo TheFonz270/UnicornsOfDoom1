@@ -10,8 +10,8 @@ function DoughnutChart({ score, questions }) {
         label: 'Scores',
         data: [`${score}`,`${wrongAnswers}`],
         backgroundColor: [
-          'rgba(47, 219, 215)',
-          'rgba(218,47,50)',
+          '#4884bd',
+          '#ad3131',
         ]
       }
     ]

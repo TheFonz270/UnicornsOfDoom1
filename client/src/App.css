@@ -159,6 +159,8 @@ button:hover {
   background-image: url(https://image.freepik.com/free-photo/empty-blackboard_53876-30426.jpg);
   background-size: cover;
   padding:15px;
+  width:590px;
+  height:380px;
 }
 
 .score-section {
