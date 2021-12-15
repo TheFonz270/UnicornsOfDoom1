@@ -1,5 +1,6 @@
 body {
   background-color:#F7F7F7;
+  /* background-image: url(../public/imgs/wallpaper.png); */
 }
 
 img {
@@ -49,6 +50,8 @@ p {
 
 .Gallery {
   display:flex;
+  transform: scale(1.15);
+  padding-top:58px;
 }
 
 #countryContainer .kid {
