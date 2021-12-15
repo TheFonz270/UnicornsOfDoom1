@@ -4,7 +4,7 @@ body {
 
 img {
   max-width:400px;
-  max-height:400px
+  max-height:400px;
 }
 
 p {
@@ -60,30 +60,38 @@ p {
 
 #keyPlayers img {
   max-width:150px;
+  box-shadow: 2px 2px 2px rgba(45, 44, 44, 0.482);
 }
 
 #keyPlayers {
   display: flex;
   flex-wrap: wrap;
   margin:0 15px;
-}
-
-#keyPlayers img:hover {
-  transform: scale(1.1);
-  opacity: 80%;
+  
 }
 
 .playerCard {
   margin:0 15px 25px;
+  cursor: pointer
+}
+
+.playerCard:hover {
+  transform: scale(1.05);
+  opacity: 80%;
 }
 
 .playerCard h3 {
   color:#111;
-  padding:3px;
+  padding:1px;
   margin:0px;
-  border: 2px solid #222;
+  margin-top: 2px;
+  /* border: 1px solid #222; */
+  background-image: url(https://media.istockphoto.com/vectors/bronze-or-copper-metal-texture-background-vector-id610853422?k=20&m=610853422&s=170667a&w=0&h=Dh5_3GIlaRmXD_1BD_E7Qxst0bzQJocIaH3BmoDh-tQ=);
+  background-size: cover;
+  box-shadow: 2px 2px 2px rgba(45, 44, 44, 0.482);
   border-radius:7px;
   font-family: 'Charmonman';
+  font-size: 14px;
   text-align: center;
 }
 
@@ -100,7 +108,8 @@ p {
   padding: 20px;
   font-family: 'Fuzzy Bubbles', cursive;
   font-size: 15px;
-  color: rgb(38, 38, 38)
+  color: rgb(38, 38, 38);
+  text-shadow: 0 0  10px #fff;
 }
 
 
@@ -116,6 +125,7 @@ p {
   margin:0 0 10px 10px;
   max-width:350px;
   border: solid 2px;
+  box-shadow: 4px 4px 3px rgba(34, 34, 34, 0.5);
 }
 
 #characterComponent {
@@ -137,15 +147,30 @@ button {
   color:#ffffff;
   margin:25px;
   width: 140px;
+  cursor: pointer;
+  border-radius: 7px;
+
 }
 
 button:hover {
   background-color: #2b76b8;
+  box-shadow: 0 0 5px #2b76b8;
 }
 
 #buttonBar {
   display:flex;
   width:100%;
+  justify-content: center;
+}
+.greyedOut {
+  cursor: auto;
+  background-color: #F7F7F7
+}
+
+.greyedOut:hover{
+  cursor: auto;
+  background-color: #F7F7F7;
+  box-shadow: none;
 }
 
 
@@ -205,19 +230,21 @@ button:hover {
     background-color: transparent;
     width: auto;
     text-decoration: underline;
-}
-
-.chart {
-  vertical-align: middle;
-}
-
-.chart-section {
-  vertical-align: middle;
-}
-
-
-.answer-section > button:hover {
-  text-decoration:none;
+    box-shadow: none;
+  }
+  
+  .chart {
+    vertical-align: middle;
+  }
+  
+  .chart-section {
+    vertical-align: middle;
+  }
+  
+  
+  .answer-section > button:hover {
+    text-decoration:none;
+    text-shadow: 0 0 3px #b8b8b8;
 }
 
 #heading img {
@@ -225,9 +252,14 @@ button:hover {
 }
 
 #quizButton {
-  background-color: red;
+  background-color: #f00;
 }
 
 #quizButton:hover {
-  background-color: rgb(255, 77, 77);
+  background-color: #f00;
+  box-shadow: 0 0 5px #f00;
+}
+
+#heading h1 {
+  cursor: pointer;
 }

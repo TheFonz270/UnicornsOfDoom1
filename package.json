@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "cypress": "^9.1.1"
+  },
+  "scripts": {
+    "start": "node server.js, react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "test:e2e": "cypress open" ,
+    "server:dev": "nodemon server.js",
+    "seeds": "mongo < ./db/seeds.js"
+  }
+}
