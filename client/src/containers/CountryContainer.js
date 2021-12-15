@@ -9,7 +9,7 @@ const CountryContainer = () => {
     const [Stories, setStories] = useState([[]]);
     const [showKeyPlayers,setShowKeyPlayers]=useState(true)
     const [showQuiz,setShowQuiz]=useState(false)
-    const [showStory,setShowStory]=useState(true)
+    const [showStory,setShowStory]=useState(false)
     const [currentPage, setCurrentPage] = useState(0);
     const [bubble, setBubble]=useState("BubbleText1.png")
     const [showScore, setShowScore] = useState(false);
@@ -65,9 +65,8 @@ const CountryContainer = () => {
     useEffect(() =>{
         if (currentPage === 4){
             setBubble("BubbleText3.png")
-        } else {
+        } else if (showStory===true){
             setBubble("BubbleText2.png")
-
         }
     }, [currentPage])
 
