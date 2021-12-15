@@ -92,7 +92,12 @@ const CountryContainer = () => {
 
     return (
         <>
-    <div id="HeadingBar"><div id="heading"><h1 onClick={handleHome}>Scottish History</h1></div></div>
+        <div id="HeadingBar">
+                <div id="heading">
+                    <img src ="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/BBC_logo_white.svg/1200px-BBC_logo_white.svg.png"/>
+                    <h1 onClick={handleHome}>Scottish History</h1>
+                </div>
+            </div>
     <div id="countryContainer">
         <div class="main">
             {showKeyPlayers?<div class="Gallery">
