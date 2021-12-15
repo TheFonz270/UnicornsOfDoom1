@@ -17,7 +17,9 @@ const CountryContainer = () => {
 
     const handleNextPage = () => {
         setCurrentPage(currentPage + 1)
-    }
+        }
+
+
 
     const handlePrevPage = () => {
         setCurrentPage(currentPage - 1)
@@ -26,7 +28,7 @@ const CountryContainer = () => {
     const handleQuizClick = () => {
         setShowQuiz(true)
         setShowStory(false)
-        setBubble("BubbleText3.png")
+        setBubble("questions.png")
     }
     // setStoryState({});
 
@@ -59,6 +61,15 @@ const CountryContainer = () => {
     getStories().then((allStories)=>{
       setStories(allStories);
     })}, [])
+
+    useEffect(() =>{
+        if (currentPage === 4){
+            setBubble("BubbleText3.png")
+        } else {
+            setBubble("BubbleText2.png")
+
+        }
+    }, [currentPage])
 
     const selectPlayer = id => {
         getStory(id).then((selectedStory) => {
